@@ -12,6 +12,7 @@ public class App
 {
     public static void main( String[] args )
     {
+        // Inheritance
         AbstractApplicationContext context=new FileSystemXmlApplicationContext("src\\main\\java\\spring-config.xml");
         Car car=(Car)context.getBean("car");
         car.setColor("White");
